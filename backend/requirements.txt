@@ -1,0 +1,14 @@
+fastapi==0.111.0
+uvicorn==0.29.0
+xgboost==2.0.3
+shap==0.45.0
+scikit-learn==1.4.2
+pandas==2.2.2
+numpy==1.26.4
+faker==24.0.0
+scipy==1.13.0
+sqlalchemy==2.0.30
+pydantic==2.7.1
+python-multipart==0.0.9
+celery==5.3.6
+redis==5.0.4
