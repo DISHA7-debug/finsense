@@ -1,0 +1,16 @@
+fastapi
+uvicorn
+xgboost
+shap
+scikit-learn
+pandas
+numpy
+faker
+scipy
+sqlalchemy
+pydantic
+python-multipart
+celery
+redis
+python-dotenv
+groq
