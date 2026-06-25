@@ -1,0 +1,802 @@
+[
+    {
+        "borrower_id": 304421,
+        "actual_TARGET": 1,
+        "probability": 0.966676,
+        "risk_score": 96.67,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 269598,
+        "actual_TARGET": 1,
+        "probability": 0.960772,
+        "risk_score": 96.08,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 320907,
+        "actual_TARGET": 0,
+        "probability": 0.956958,
+        "risk_score": 95.7,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 374276,
+        "actual_TARGET": 1,
+        "probability": 0.94808,
+        "risk_score": 94.81,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 181065,
+        "actual_TARGET": 1,
+        "probability": 0.945623,
+        "risk_score": 94.56,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 219786,
+        "actual_TARGET": 0,
+        "probability": 0.945406,
+        "risk_score": 94.54,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 454088,
+        "actual_TARGET": 1,
+        "probability": 0.944763,
+        "risk_score": 94.48,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 135388,
+        "actual_TARGET": 1,
+        "probability": 0.940033,
+        "risk_score": 94.0,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 226520,
+        "actual_TARGET": 0,
+        "probability": 0.936204,
+        "risk_score": 93.62,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 337857,
+        "actual_TARGET": 1,
+        "probability": 0.934668,
+        "risk_score": 93.47,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 166323,
+        "actual_TARGET": 1,
+        "probability": 0.93388,
+        "risk_score": 93.39,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 416279,
+        "actual_TARGET": 1,
+        "probability": 0.9337,
+        "risk_score": 93.37,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 224163,
+        "actual_TARGET": 1,
+        "probability": 0.933471,
+        "risk_score": 93.35,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 321793,
+        "actual_TARGET": 1,
+        "probability": 0.93293,
+        "risk_score": 93.29,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 146575,
+        "actual_TARGET": 0,
+        "probability": 0.932694,
+        "risk_score": 93.27,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 163880,
+        "actual_TARGET": 1,
+        "probability": 0.932647,
+        "risk_score": 93.26,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 124021,
+        "actual_TARGET": 0,
+        "probability": 0.931544,
+        "risk_score": 93.15,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 425319,
+        "actual_TARGET": 0,
+        "probability": 0.930668,
+        "risk_score": 93.07,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 398002,
+        "actual_TARGET": 1,
+        "probability": 0.930397,
+        "risk_score": 93.04,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 360854,
+        "actual_TARGET": 1,
+        "probability": 0.929871,
+        "risk_score": 92.99,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 185488,
+        "actual_TARGET": 0,
+        "probability": 0.929871,
+        "risk_score": 92.99,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 442679,
+        "actual_TARGET": 0,
+        "probability": 0.92922,
+        "risk_score": 92.92,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 456108,
+        "actual_TARGET": 1,
+        "probability": 0.928681,
+        "risk_score": 92.87,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 448867,
+        "actual_TARGET": 1,
+        "probability": 0.928425,
+        "risk_score": 92.84,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 258636,
+        "actual_TARGET": 1,
+        "probability": 0.928374,
+        "risk_score": 92.84,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 160568,
+        "actual_TARGET": 0,
+        "probability": 0.928198,
+        "risk_score": 92.82,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 125415,
+        "actual_TARGET": 0,
+        "probability": 0.927919,
+        "risk_score": 92.79,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 374693,
+        "actual_TARGET": 0,
+        "probability": 0.926332,
+        "risk_score": 92.63,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 293721,
+        "actual_TARGET": 0,
+        "probability": 0.925899,
+        "risk_score": 92.59,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 421460,
+        "actual_TARGET": 1,
+        "probability": 0.925938,
+        "risk_score": 92.59,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 354137,
+        "actual_TARGET": 0,
+        "probability": 0.924503,
+        "risk_score": 92.45,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 425868,
+        "actual_TARGET": 1,
+        "probability": 0.924127,
+        "risk_score": 92.41,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 261600,
+        "actual_TARGET": 1,
+        "probability": 0.924084,
+        "risk_score": 92.41,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 172142,
+        "actual_TARGET": 0,
+        "probability": 0.923972,
+        "risk_score": 92.4,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 129525,
+        "actual_TARGET": 1,
+        "probability": 0.923436,
+        "risk_score": 92.34,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 194916,
+        "actual_TARGET": 1,
+        "probability": 0.92269,
+        "risk_score": 92.27,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 452629,
+        "actual_TARGET": 1,
+        "probability": 0.92254,
+        "risk_score": 92.25,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 247186,
+        "actual_TARGET": 1,
+        "probability": 0.922239,
+        "risk_score": 92.22,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 303394,
+        "actual_TARGET": 0,
+        "probability": 0.921945,
+        "risk_score": 92.19,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 389465,
+        "actual_TARGET": 1,
+        "probability": 0.921754,
+        "risk_score": 92.18,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 397733,
+        "actual_TARGET": 1,
+        "probability": 0.919638,
+        "risk_score": 91.96,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 153909,
+        "actual_TARGET": 1,
+        "probability": 0.919473,
+        "risk_score": 91.95,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 377793,
+        "actual_TARGET": 0,
+        "probability": 0.919511,
+        "risk_score": 91.95,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 280448,
+        "actual_TARGET": 0,
+        "probability": 0.919087,
+        "risk_score": 91.91,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 222477,
+        "actual_TARGET": 0,
+        "probability": 0.918092,
+        "risk_score": 91.81,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 395659,
+        "actual_TARGET": 1,
+        "probability": 0.917982,
+        "risk_score": 91.8,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 262490,
+        "actual_TARGET": 1,
+        "probability": 0.917773,
+        "risk_score": 91.78,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 377040,
+        "actual_TARGET": 0,
+        "probability": 0.917612,
+        "risk_score": 91.76,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 359090,
+        "actual_TARGET": 1,
+        "probability": 0.917271,
+        "risk_score": 91.73,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 282547,
+        "actual_TARGET": 1,
+        "probability": 0.917169,
+        "risk_score": 91.72,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 409155,
+        "actual_TARGET": 0,
+        "probability": 0.917077,
+        "risk_score": 91.71,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 120204,
+        "actual_TARGET": 1,
+        "probability": 0.916869,
+        "risk_score": 91.69,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 344085,
+        "actual_TARGET": 0,
+        "probability": 0.916266,
+        "risk_score": 91.63,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 388411,
+        "actual_TARGET": 1,
+        "probability": 0.915974,
+        "risk_score": 91.6,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 215557,
+        "actual_TARGET": 1,
+        "probability": 0.915616,
+        "risk_score": 91.56,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 285937,
+        "actual_TARGET": 0,
+        "probability": 0.915646,
+        "risk_score": 91.56,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 378234,
+        "actual_TARGET": 1,
+        "probability": 0.915214,
+        "risk_score": 91.52,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 422872,
+        "actual_TARGET": 0,
+        "probability": 0.914781,
+        "risk_score": 91.48,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 330115,
+        "actual_TARGET": 0,
+        "probability": 0.914497,
+        "risk_score": 91.45,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 154022,
+        "actual_TARGET": 1,
+        "probability": 0.913586,
+        "risk_score": 91.36,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 217810,
+        "actual_TARGET": 1,
+        "probability": 0.913062,
+        "risk_score": 91.31,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 142800,
+        "actual_TARGET": 0,
+        "probability": 0.912313,
+        "risk_score": 91.23,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 383119,
+        "actual_TARGET": 0,
+        "probability": 0.912009,
+        "risk_score": 91.2,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 445424,
+        "actual_TARGET": 1,
+        "probability": 0.91191,
+        "risk_score": 91.19,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 256968,
+        "actual_TARGET": 0,
+        "probability": 0.911642,
+        "risk_score": 91.16,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 363776,
+        "actual_TARGET": 0,
+        "probability": 0.911491,
+        "risk_score": 91.15,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 128809,
+        "actual_TARGET": 0,
+        "probability": 0.910585,
+        "risk_score": 91.06,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 267160,
+        "actual_TARGET": 1,
+        "probability": 0.909972,
+        "risk_score": 91.0,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 136865,
+        "actual_TARGET": 0,
+        "probability": 0.909986,
+        "risk_score": 91.0,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 452342,
+        "actual_TARGET": 0,
+        "probability": 0.909551,
+        "risk_score": 90.96,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 100189,
+        "actual_TARGET": 0,
+        "probability": 0.909274,
+        "risk_score": 90.93,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 221520,
+        "actual_TARGET": 0,
+        "probability": 0.909181,
+        "risk_score": 90.92,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 227574,
+        "actual_TARGET": 0,
+        "probability": 0.908775,
+        "risk_score": 90.88,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 349857,
+        "actual_TARGET": 0,
+        "probability": 0.907985,
+        "risk_score": 90.8,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 398593,
+        "actual_TARGET": 0,
+        "probability": 0.907788,
+        "risk_score": 90.78,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 196511,
+        "actual_TARGET": 1,
+        "probability": 0.907705,
+        "risk_score": 90.77,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 385364,
+        "actual_TARGET": 0,
+        "probability": 0.907372,
+        "risk_score": 90.74,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 439490,
+        "actual_TARGET": 1,
+        "probability": 0.907267,
+        "risk_score": 90.73,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 125710,
+        "actual_TARGET": 0,
+        "probability": 0.907076,
+        "risk_score": 90.71,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 340368,
+        "actual_TARGET": 1,
+        "probability": 0.906192,
+        "risk_score": 90.62,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 347356,
+        "actual_TARGET": 0,
+        "probability": 0.906141,
+        "risk_score": 90.61,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 164204,
+        "actual_TARGET": 1,
+        "probability": 0.905888,
+        "risk_score": 90.59,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 434041,
+        "actual_TARGET": 0,
+        "probability": 0.905711,
+        "risk_score": 90.57,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 389354,
+        "actual_TARGET": 1,
+        "probability": 0.905237,
+        "risk_score": 90.52,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 169206,
+        "actual_TARGET": 1,
+        "probability": 0.904923,
+        "risk_score": 90.49,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 390333,
+        "actual_TARGET": 0,
+        "probability": 0.904588,
+        "risk_score": 90.46,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 349759,
+        "actual_TARGET": 0,
+        "probability": 0.904496,
+        "risk_score": 90.45,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 179433,
+        "actual_TARGET": 1,
+        "probability": 0.904481,
+        "risk_score": 90.45,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 228267,
+        "actual_TARGET": 1,
+        "probability": 0.904153,
+        "risk_score": 90.42,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 190027,
+        "actual_TARGET": 0,
+        "probability": 0.904221,
+        "risk_score": 90.42,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 251553,
+        "actual_TARGET": 0,
+        "probability": 0.904002,
+        "risk_score": 90.4,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 332260,
+        "actual_TARGET": 0,
+        "probability": 0.903702,
+        "risk_score": 90.37,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 387924,
+        "actual_TARGET": 0,
+        "probability": 0.903309,
+        "risk_score": 90.33,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 247657,
+        "actual_TARGET": 1,
+        "probability": 0.903324,
+        "risk_score": 90.33,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 307483,
+        "actual_TARGET": 0,
+        "probability": 0.902295,
+        "risk_score": 90.23,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 342187,
+        "actual_TARGET": 1,
+        "probability": 0.902152,
+        "risk_score": 90.22,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 304326,
+        "actual_TARGET": 1,
+        "probability": 0.902136,
+        "risk_score": 90.21,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 361755,
+        "actual_TARGET": 0,
+        "probability": 0.901805,
+        "risk_score": 90.18,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 201132,
+        "actual_TARGET": 1,
+        "probability": 0.901654,
+        "risk_score": 90.17,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    },
+    {
+        "borrower_id": 429282,
+        "actual_TARGET": 0,
+        "probability": 0.900753,
+        "risk_score": 90.08,
+        "risk_tier": "red",
+        "recommended_action": "Pre-default risk. Immediate branch escalation recommended."
+    }
+]

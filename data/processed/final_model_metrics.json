@@ -1,0 +1,20 @@
+{
+    "final_model": "Stronger Full XGBoost",
+    "roc_auc": 0.7869476390982232,
+    "pr_auc": 0.28470860200210224,
+    "f1_threshold": 0.6885425448417664,
+    "finsense_alert_threshold": 0.5247136354446411,
+    "alert_precision": 0.1910618878005343,
+    "alert_recall": 0.6914400805639477,
+    "alert_f1": 0.2993938865390485,
+    "alert_confusion_matrix": [
+        [
+            42003,
+            14535
+        ],
+        [
+            1532,
+            3433
+        ]
+    ]
+}
