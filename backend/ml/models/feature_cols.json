@@ -1,0 +1,14 @@
+[
+  "emi_missed_last_3",
+  "balance_trend_slope",
+  "bounce_count_3m",
+  "income_coverage_ratio",
+  "credit_debit_ratio",
+  "utilisation_rate",
+  "months_to_completion",
+  "late_payment_rate",
+  "utility_miss_rate",
+  "min_balance_ratio",
+  "loan_to_income_ratio",
+  "employment_risk"
+]
