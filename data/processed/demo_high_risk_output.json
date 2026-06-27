@@ -1,0 +1,65 @@
+{
+    "borrower_id": 304421,
+    "probability": 0.966676,
+    "risk_score": 96.67,
+    "risk_tier": "red",
+    "recommended_action": "Pre-default risk. Immediate branch escalation recommended.",
+    "top_risk_factors": [
+        {
+            "feature": "EXT_SOURCE_2",
+            "human_label": "External credit score 2",
+            "impact": 0.8612,
+            "direction": "increasing_risk",
+            "contribution_value": 0.8612
+        },
+        {
+            "feature": "INST_LATE_PAYMENT_FLAG_MEAN",
+            "human_label": "Late payment rate",
+            "impact": 0.1737,
+            "direction": "increasing_risk",
+            "contribution_value": 0.1737
+        },
+        {
+            "feature": "ANNUITY_CREDIT_RATIO",
+            "human_label": "Annuity-to-credit ratio",
+            "impact": 0.138,
+            "direction": "increasing_risk",
+            "contribution_value": 0.138
+        },
+        {
+            "feature": "PREV_PREV_REFUSED_FLAG_MEAN",
+            "human_label": "Previous application refusal rate",
+            "impact": 0.1257,
+            "direction": "increasing_risk",
+            "contribution_value": 0.1257
+        },
+        {
+            "feature": "INST_NUM_INSTALMENT_NUMBER_MAX",
+            "human_label": "Inst Num Instalment Number Max",
+            "impact": 0.1224,
+            "direction": "increasing_risk",
+            "contribution_value": 0.1224
+        },
+        {
+            "feature": "INST_AMT_PAYMENT_SUM",
+            "human_label": "Inst Amt Payment Sum",
+            "impact": 0.1182,
+            "direction": "increasing_risk",
+            "contribution_value": 0.1182
+        },
+        {
+            "feature": "EXT_SOURCE_3",
+            "human_label": "External credit score 3",
+            "impact": 0.1127,
+            "direction": "increasing_risk",
+            "contribution_value": 0.1127
+        },
+        {
+            "feature": "INST_PAYMENT_DELAY_MAX",
+            "human_label": "Maximum installment payment delay",
+            "impact": 0.1045,
+            "direction": "increasing_risk",
+            "contribution_value": 0.1045
+        }
+    ]
+}

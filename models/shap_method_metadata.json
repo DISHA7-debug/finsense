@@ -1,0 +1,6 @@
+{
+    "explanation_method": "XGBoost built-in SHAP-style feature contributions",
+    "implementation": "booster.predict(DMatrix, pred_contribs=True)",
+    "reason": "Used due to SHAP TreeExplainer compatibility issue with newer XGBoost base_score format",
+    "output": "Per-feature contribution values plus base value"
+}

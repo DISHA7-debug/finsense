@@ -1,0 +1,46 @@
+{
+    "project": "FinSense",
+    "model_name": "Stronger Full XGBoost",
+    "dataset": "Home Credit Default Risk",
+    "training_mode": "Full dataset final training",
+    "train_rows": 246008,
+    "test_rows": 61503,
+    "num_features": 320,
+    "target_meaning": {
+        "0": "No repayment difficulty",
+        "1": "Repayment difficulty / default risk"
+    },
+    "ranking_metrics": {
+        "accuracy": 0.8609336129944881,
+        "precision": 0.27686567164179104,
+        "recall": 0.44833836858006043,
+        "f1_score": 0.3423298731257209,
+        "roc_auc": 0.7869476390982232,
+        "pr_auc": 0.28470860200210224,
+        "best_f1_threshold": 0.6885425448417664
+    },
+    "finsense_alert_mode": {
+        "alert_threshold": 0.5247136354446411,
+        "precision": 0.1910618878005343,
+        "recall": 0.6914400805639477,
+        "f1_score": 0.2993938865390485,
+        "confusion_matrix": [
+            [
+                42003,
+                14535
+            ],
+            [
+                1532,
+                3433
+            ]
+        ],
+        "reason": "Recall-focused threshold selected using F2-score because early NPA prevention prioritizes catching risky borrowers."
+    },
+    "risk_score_logic": "risk_score = predicted_probability * 100",
+    "risk_tiers": {
+        "green": "0 <= score < 30",
+        "amber": "30 <= score < 55",
+        "orange": "55 <= score < 75",
+        "red": "score >= 75"
+    }
+}
