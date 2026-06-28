@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinSense Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+
+<div class="flex h-screen">
+
+    <!-- Sidebar -->
+    <aside class="dash-sidebar">
+        <div class="brand">
+            <h1>🏦 FinSense</h1>
+            <p>SBI NPA Intelligence</p>
+        </div>
+        <nav class="dash-nav">
+            <a href="dashboard.html" class="active"><i class="ri-dashboard-3-fill text-lg"></i> Dashboard</a>
+            <a href="borrower.html"><i class="ri-group-fill text-lg"></i> Borrowers</a>
+            <a href="alerts.html"><i class="ri-alarm-warning-fill text-lg"></i> Alerts</a>
+            <a href="#"><i class="ri-bar-chart-grouped-fill text-lg"></i> Analytics</a>
+            <a href="#"><i class="ri-file-chart-fill text-lg"></i> Reports</a>
+            <a href="#"><i class="ri-settings-3-fill text-lg"></i> Settings</a>
+        </nav>
+        <div class="user-block">
+            <p>Logged in as</p>
+            <h2>Priya Sharma</h2>
+            <p style="font-size:.8rem;color:rgba(255,255,255,.35)">SBI Credit Officer</p>
+        </div>
+    </aside>
+
+    <!-- Main -->
+    <main class="flex-1 overflow-y-auto">
+
+        <header class="dash-header">
+            <div>
+                <h2>Portfolio Overview</h2>
+                <p>Which borrowers need my attention today?</p>
+            </div>
+            <div class="flex gap-4 items-center relative">
+                <div class="relative">
+                    <button class="notif-btn" id="notifBtn" aria-label="Notifications">
+                        <i class="ri-notification-3-fill"></i>
+                        <span class="notif-badge" id="alertCount">0</span>
+                    </button>
+                    <div class="notif-dropdown" id="notifDropdown">
+                        <div class="notif-dropdown-header">Live Notifications</div>
+                        <div class="notif-item"><span class="dot-lime">Rajesh Kumar</span> moved to RED<div class="time">2 mins ago</div></div>
+                        <div class="notif-item"><span class="dot-lime">Anjali</span> rescored<div class="time">5 mins ago</div></div>
+                        <div class="notif-item">AI contacted borrower<div class="time">10 mins ago</div></div>
+                        <div class="notif-item">Alert created for high-risk loan<div class="time">15 mins ago</div></div>
+                    </div>
+                </div>
+                <img src="https://i.pravatar.cc/80" alt="Officer" class="w-11 h-11 rounded-full ring-brand">
+            </div>
+        </header>
+
+        <section class="p-8 lg:p-10 space-y-8">
+
+            <!-- KPI Cards -->
+            <div class="kpi-grid">
+                <div class="kpi-card kpi-green">
+                    <p class="kpi-label">Healthy Borrowers</p>
+                    <h2 class="kpi-value count-up" id="greenCount">--</h2>
+                </div>
+                <div class="kpi-card kpi-amber">
+                    <p class="kpi-label">Early Stress</p>
+                    <h2 class="kpi-value count-up" id="amberCount">--</h2>
+                </div>
+                <div class="kpi-card kpi-orange">
+                    <p class="kpi-label">High Risk</p>
+                    <h2 class="kpi-value count-up" id="orangeCount">--</h2>
+                </div>
+                <div class="kpi-card kpi-red">
+                    <p class="kpi-label">Pre Default</p>
+                    <h2 class="kpi-value count-up" id="redCount">--</h2>
+                </div>
+            </div>
+
+            <!-- Chart + Activity -->
+            <div class="grid lg:grid-cols-3 gap-6">
+                <div class="dash-panel lg:col-span-2 fade-chart">
+                    <div class="flex flex-wrap justify-between items-center gap-4 mb-4">
+                        <h3>Portfolio Risk Trend</h3>
+                        <div class="chart-tabs">
+                            <button class="chart-tab active">Income</button>
+                            <button class="chart-tab">Expenses</button>
+                        </div>
+                    </div>
+                    <div class="timeframe-tabs">
+                        <button class="timeframe-tab">Day</button>
+                        <button class="timeframe-tab">Week</button>
+                        <button class="timeframe-tab active">Month</button>
+                        <button class="timeframe-tab">Year</button>
+                    </div>
+                    <canvas id="trendChart" height="90"></canvas>
+                </div>
+
+                <div class="dash-panel-dark fade-chart">
+                    <h3 class="text-lg font-bold mb-4">Officer Activity</h3>
+                    <ul class="activity-feed">
+                        <li><span class="act-time">10:42</span><span class="act-text">Rajesh Kumar rescored</span></li>
+                        <li><span class="act-time">10:38</span><span class="act-text">AI contacted borrower</span></li>
+                        <li><span class="act-time">10:35</span><span class="act-text">Alert created</span></li>
+                        <li><span class="act-time">10:20</span><span class="act-text">Officer viewed loan</span></li>
+                        <li><span class="act-time">10:05</span><span class="act-text">Portfolio refreshed</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="quick-stat"><div class="qs-val">42.3</div><div class="qs-label">Avg Portfolio Risk</div></div>
+                <div class="quick-stat"><div class="qs-val">5,000</div><div class="qs-label">Loans Monitored</div></div>
+                <div class="quick-stat"><div class="qs-val" id="todayAlerts">12</div><div class="qs-label">Today's Alerts</div></div>
+                <div class="quick-stat"><div class="qs-val">8</div><div class="qs-label">Manual Rescores</div></div>
+                <div class="quick-stat"><div class="qs-val">24</div><div class="qs-label">AI Conversations</div></div>
+                <div class="quick-stat"><div class="qs-val">₹2.4Cr</div><div class="qs-label">Recovery Saved</div></div>
+            </div>
+
+            <!-- High Risk Table -->
+            <div class="dash-panel fade-chart">
+                <div class="flex flex-wrap justify-between items-center gap-4 mb-6">
+                    <h3>High Risk Borrowers</h3>
+                    <div class="flex gap-3">
+                        <input type="text" placeholder="Search borrower..." class="dash-search">
+                        <button class="btn-dash btn-dash-lime"><i class="ri-download-2-line"></i> Export CSV</button>
+                    </div>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="dash-table">
+                        <thead>
+                            <tr>
+                                <th>Borrower</th>
+                                <th>Loan Type</th>
+                                <th>Outstanding</th>
+                                <th>Risk Score</th>
+                                <th>Tier</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="borrowerTable">
+                            <!-- dashboard.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+    </main>
+</div>
+
+<script type="module" src="js/dashboard.js"></script>
+<script>
+/* Notification dropdown toggle */
+document.getElementById('notifBtn')?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    document.getElementById('notifDropdown').classList.toggle('open');
+});
+document.addEventListener('click', () => {
+    document.getElementById('notifDropdown')?.classList.remove('open');
+});
+
+/* Count-up animation for KPI numbers */
+function animateCount(el, target, duration = 1200) {
+    if (!el || isNaN(target)) { if (el) el.textContent = target ?? '--'; return; }
+    const start = performance.now();
+    const from = 0;
+    const step = (now) => {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(from + (target - from) * eased);
+        if (p < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+}
+
+/* Observe KPI elements after dashboard.js loads */
+const observer = new MutationObserver(() => {
+    ['greenCount','amberCount','orangeCount','redCount'].forEach(id => {
+        const el = document.getElementById(id);
+        if (el && el.textContent !== '--' && !el.dataset.animated) {
+            const val = parseInt(el.textContent, 10);
+            if (!isNaN(val)) { el.dataset.animated = '1'; animateCount(el, val); }
+        }
+    });
+});
+['greenCount','amberCount','orangeCount','redCount'].forEach(id => {
+    const el = document.getElementById(id);
+    if (el) observer.observe(el, { childList: true, characterData: true, subtree: true });
+});
+</script>
+</body>
+</html>

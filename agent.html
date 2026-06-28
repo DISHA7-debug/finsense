@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>FinSense AI Agent</title>
+
+    <!-- Tailwind -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icons -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/dashboard.css">
+
+</head>
+
+<body class="page-shell">
+
+<!-- ==========================================
+TOP BAR
+=========================================== -->
+
+<header class="bg-white shadow-md px-8 py-5 flex justify-between items-center">
+
+    <div>
+
+        <h1 class="text-3xl font-bold">
+
+            🤖 FinSense AI Agent
+
+        </h1>
+
+        <p class="text-gray-500">
+
+            Intelligent Borrower Assistance
+
+        </p>
+
+    </div>
+
+    <button
+
+        onclick="history.back()"
+
+        class="btn-brand-muted px-5 py-3 rounded-xl">
+
+        <i class="ri-arrow-left-line"></i>
+
+        Back
+
+    </button>
+
+</header>
+
+<!-- ==========================================
+MAIN
+=========================================== -->
+
+<div class="max-w-6xl mx-auto mt-8">
+
+<div class="bg-white rounded-3xl shadow-xl overflow-hidden">
+
+<!-- Borrower Info -->
+
+<div class="header-brand p-6">
+
+<h2
+id="borrowerName"
+class="text-2xl font-bold">
+
+Loading...
+
+</h2>
+
+<p
+id="loanType">
+
+Loading...
+
+</p>
+
+</div>
+
+<!-- Chat -->
+
+<div
+
+id="chatWindow"
+
+class="h-[550px] overflow-y-auto p-8 panel-muted space-y-5">
+
+<!-- Messages appear here -->
+
+</div>
+
+<!-- Quick Replies -->
+
+<div
+
+class="border-t px-8 py-5 flex gap-3 flex-wrap">
+
+<button
+
+class="quickReply quick-reply px-5 py-2 rounded-full">
+
+Tell me about restructuring
+
+</button>
+
+<button
+
+class="quickReply bg-green-100 text-green-700 px-5 py-2 rounded-full">
+
+I need more time
+
+</button>
+
+<button
+
+class="quickReply bg-orange-100 text-orange-700 px-5 py-2 rounded-full">
+
+Connect me to an officer
+
+</button>
+
+<button
+
+class="quickReply bg-red-100 text-red-700 px-5 py-2 rounded-full">
+
+I'm unable to pay
+
+</button>
+
+</div>
+
+<!-- Input -->
+
+<div
+
+class="border-t p-6 flex gap-4">
+
+<input
+
+id="messageInput"
+
+type="text"
+
+placeholder="Type your message..."
+
+class="flex-1 border rounded-xl px-5 py-4 outline-none">
+
+<button
+
+id="sendBtn"
+
+class="btn-brand px-8 rounded-xl">
+
+<i class="ri-send-plane-fill"></i>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="js/agent.js"></script>
+
+</body>
+
+</html>
