@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Borrower Details | FinSense</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body class="page-shell">
+
+<!-- ========================= -->
+<!-- TOP BAR -->
+<!-- ========================= -->
+
+<header class="bg-white shadow-md px-8 py-5 flex justify-between items-center">
+
+    <div>
+
+        <h1 class="text-3xl font-bold">
+
+            Borrower Risk Analysis
+
+        </h1>
+
+        <p class="text-gray-500">
+
+            AI Powered Explainable Risk Assessment
+
+        </p>
+
+    </div>
+
+    <div class="flex gap-4">
+
+        <button
+            onclick="history.back()"
+            class="bg-gray-700 text-white px-5 py-3 rounded-xl">
+
+            <i class="ri-arrow-left-line"></i>
+
+            Back
+
+        </button>
+
+        <button
+            id="rescoreBtn"
+            class="btn-brand px-5 py-3 rounded-xl">
+
+            <i class="ri-refresh-line"></i>
+
+            Re-Score
+
+        </button>
+
+    </div>
+
+</header>
+
+<!-- ========================= -->
+<!-- PAGE -->
+<!-- ========================= -->
+
+<div class="p-10 space-y-8">
+
+    <!-- Borrower Name -->
+
+    <div>
+
+        <h2
+            id="borrowerName"
+            class="text-4xl font-bold">
+
+            Loading...
+
+        </h2>
+
+        <p
+            id="loanType"
+            class="text-gray-500 mt-2">
+
+        </p>
+
+    </div>
+
+    <!-- ========================= -->
+
+    <div class="grid grid-cols-2 gap-8">
+
+        <!-- Risk Gauge -->
+
+        <div
+            class="bg-white rounded-3xl shadow-lg p-8">
+
+            <h2
+                class="text-2xl font-bold mb-8">
+
+                AI Risk Score
+
+            </h2>
+
+            <div id="riskGauge"></div>
+
+        </div>
+
+        <!-- SHAP -->
+
+        <div
+            class="bg-white rounded-3xl shadow-lg p-8">
+
+            <h2
+                class="text-2xl font-bold mb-8">
+
+                SHAP Explainability
+
+            </h2>
+
+            <div id="shapBars">
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+
+    <!-- Trend -->
+
+    <div
+        class="bg-white rounded-3xl shadow-lg p-8">
+
+        <div class="flex justify-between mb-6">
+
+            <h2 class="text-2xl font-bold">
+
+                Risk Score History
+
+            </h2>
+
+            <span
+                class="text-gray-500">
+
+                Last 6 Months
+
+            </span>
+
+        </div>
+
+        <div style="height:350px;">
+
+            <canvas id="trendChart"></canvas>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+
+    <div class="grid grid-cols-2 gap-8">
+
+        <!-- Loan -->
+
+        <div
+            class="bg-white rounded-3xl shadow-lg p-8">
+
+            <h2 class="text-2xl font-bold mb-6">
+
+                Loan Details
+
+            </h2>
+
+            <table class="w-full">
+
+                <tr>
+
+                    <td class="py-3 font-semibold">
+
+                        Loan ID
+
+                    </td>
+
+                    <td id="loanId"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="py-3 font-semibold">
+
+                        Outstanding
+
+                    </td>
+
+                    <td id="balance"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="py-3 font-semibold">
+
+                        EMI
+
+                    </td>
+
+                    <td id="emi"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="py-3 font-semibold">
+
+                        Interest
+
+                    </td>
+
+                    <td id="interest"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="py-3 font-semibold">
+
+                        Remaining Tenure
+
+                    </td>
+
+                    <td id="tenure"></td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+        <!-- Profile -->
+
+        <div
+            class="bg-white rounded-3xl shadow-lg p-8">
+
+            <h2
+                class="text-2xl font-bold mb-6">
+
+                Borrower Profile
+
+            </h2>
+
+            <table class="w-full">
+
+                <tr>
+
+                    <td class="py-3 font-semibold">
+
+                        Income
+
+                    </td>
+
+                    <td id="income"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="py-3 font-semibold">
+
+                        Employment
+
+                    </td>
+
+                    <td id="employment"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="py-3 font-semibold">
+
+                        City
+
+                    </td>
+
+                    <td id="city"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="py-3 font-semibold">
+
+                        Credit Score
+
+                    </td>
+
+                    <td id="credit"></td>
+
+                </tr>
+
+                <tr>
+
+                    <td class="py-3 font-semibold">
+
+                        Last Updated
+
+                    </td>
+
+                    <td id="updated"></td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- ========================= -->
+
+    <!-- AI Actions -->
+
+    <div
+        class="bg-white rounded-3xl shadow-lg p-8">
+
+        <h2
+            class="text-2xl font-bold mb-8">
+
+            Recommended Actions
+
+        </h2>
+
+        <div
+            class="grid grid-cols-3 gap-6">
+
+            <button
+                id="chatBtn"
+                class="btn-brand p-5 rounded-2xl text-lg">
+
+                🤖 Engage AI Agent
+
+            </button>
+
+            <button
+                class="bg-orange-500 text-white p-5 rounded-2xl text-lg">
+
+                📋 Recommend Restructuring
+
+            </button>
+
+            <button
+                class="bg-red-600 text-white p-5 rounded-2xl text-lg">
+
+                🚨 Escalate to Branch
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="bg-white rounded-3xl shadow-lg p-8">
+
+    <h2 class="text-2xl font-bold mb-6">
+        🤖 FinSense AI Assistant
+    </h2>
+
+    <div
+        id="chatWindow"
+        class="h-96 overflow-y-auto panel-muted rounded-xl p-4 space-y-4 mb-4">
+    </div>
+
+    <div class="flex flex-wrap gap-2 mb-4">
+
+        <button class="quickReply quick-reply px-4 py-2 rounded-full">
+            I need restructuring
+        </button>
+
+        <button class="quickReply bg-green-100 px-4 py-2 rounded-full">
+            Medical emergency
+        </button>
+
+        <button class="quickReply bg-yellow-100 px-4 py-2 rounded-full">
+            EMI extension
+        </button>
+
+        <button class="quickReply bg-red-100 px-4 py-2 rounded-full">
+            Talk to SBI Officer
+        </button>
+
+    </div>
+
+    <div class="flex gap-3">
+
+        <input
+            id="chatInput"
+            type="text"
+            placeholder="Type your message..."
+            class="flex-1 border rounded-xl px-4 py-3">
+
+        <button
+            id="sendMessage"
+            class="btn-brand px-6 rounded-xl">
+
+            <i class="ri-send-plane-fill"></i>
+
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- JS -->
+
+<script type="module" src="js/borrower.js"></script>
+
+</body>
+
+</html>

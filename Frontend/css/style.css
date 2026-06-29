@@ -1,0 +1,640 @@
+/* ===========================================================
+   FinSense - Global Styles
+   AI-Powered NPA Prevention Intelligence Platform
+   =========================================================== */
+
+/* ===========================================================
+   Google Font
+   =========================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================================================
+   CSS Variables
+   =========================================================== */
+:root {
+    --cream:  #EAE0CF;
+    --blue:   #7288AE;
+    --indigo: #4B5694;
+    --navy:   #111844;
+    --white:  #FFFFFF;
+
+    /* Legacy aliases */
+    --beige:  var(--cream);
+    --lime:   var(--indigo);
+    --black:  var(--navy);
+    --mint:   var(--cream);
+}
+
+:root{
+
+    /* Primary — Brand palette */
+
+    --primary: var(--indigo);
+    --primary-dark: var(--navy);
+    --accent-black: var(--navy);
+
+    /* Risk Colors */
+
+    --green:#16a34a;
+    --amber:#d97706;
+    --orange:#ea580c;
+    --red:#dc2626;
+
+    /* Neutrals */
+
+    --background: var(--cream);
+    --surface: var(--white);
+
+    --border: rgba(17, 24, 68, 0.12);
+
+    --text: var(--navy);
+
+    --text-light:#64748b;
+
+    --shadow:
+
+    0 12px 30px rgba(0,0,0,.08);
+
+    --radius:18px;
+
+}
+
+/* ===========================================================
+   Reset
+   =========================================================== */
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--beige);
+
+    color:var(--text);
+
+    line-height:1.6;
+
+}
+
+/* ===========================================================
+   Typography
+   =========================================================== */
+
+h1{
+
+    font-size:3rem;
+    font-weight:800;
+
+}
+
+h2{
+
+    font-size:2rem;
+    font-weight:700;
+
+}
+
+h3{
+
+    font-size:1.4rem;
+    font-weight:600;
+
+}
+
+p{
+
+    color:var(--text-light);
+
+}
+
+/* ===========================================================
+   Links
+   =========================================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ===========================================================
+   Images
+   =========================================================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ===========================================================
+   Buttons
+   =========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:14px 28px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+.btn:active{
+
+    transform:scale(.98);
+
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.btn-primary:hover{
+
+    background:var(--primary-dark);
+
+}
+
+.btn-secondary{
+
+    background:white;
+
+    color:var(--primary);
+
+    border:1px solid var(--border);
+
+}
+
+/* ===========================================================
+   Cards
+   =========================================================== */
+
+.card{
+
+    background:var(--surface);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    padding:24px;
+
+}
+
+/* ===========================================================
+   Glass Effect
+   =========================================================== */
+
+.glass{
+
+    background:rgba(255,255,255,.7);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.35);
+
+}
+
+/* ===========================================================
+   Container
+   =========================================================== */
+
+.container{
+
+    width:min(1300px,92%);
+
+    margin:auto;
+
+}
+
+/* ===========================================================
+   Section
+   =========================================================== */
+
+section{
+
+    padding:80px 0;
+
+}
+
+/* ===========================================================
+   Badge
+   =========================================================== */
+
+.badge{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+    font-weight:600;
+
+}
+
+.badge.green{
+
+    background:#dcfce7;
+
+    color:var(--green);
+
+}
+
+.badge.amber{
+
+    background:#fef3c7;
+
+    color:var(--amber);
+
+}
+
+.badge.orange{
+
+    background:#ffedd5;
+
+    color:var(--orange);
+
+}
+
+.badge.red{
+
+    background:#fee2e2;
+
+    color:var(--red);
+
+}
+
+/* ===========================================================
+   Inputs
+   =========================================================== */
+
+input,
+
+textarea,
+
+select{
+
+    width:100%;
+
+    border:1px solid var(--border);
+
+    border-radius:12px;
+
+    padding:14px;
+
+    outline:none;
+
+    transition:.25s;
+
+    font-size:15px;
+
+}
+
+input:focus,
+
+textarea:focus,
+
+select:focus{
+
+    border-color: var(--indigo);
+    box-shadow: 0 0 0 4px rgba(75, 86, 148, 0.15);
+
+}
+
+/* ===========================================================
+   Table
+   =========================================================== */
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+thead{
+
+    background:#f8fafc;
+
+}
+
+thead th{
+
+    padding:16px;
+
+    text-align:left;
+
+    color:var(--text-light);
+
+}
+
+tbody td{
+
+    padding:16px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+tbody tr{
+
+    transition:.25s;
+
+}
+
+tbody tr:hover{
+
+    background:rgba(234, 224, 207, 0.5);
+
+}
+
+/* ===========================================================
+   Scrollbar
+   =========================================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--cream);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--blue);
+
+    border-radius:999px;
+
+}
+
+/* ===========================================================
+   Utility Classes
+   =========================================================== */
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hidden{
+
+    display:none;
+
+}
+
+.shadow{
+
+    box-shadow:var(--shadow);
+
+}
+
+.rounded{
+
+    border-radius:var(--radius);
+
+}
+
+/* ===========================================================
+   Animations
+   =========================================================== */
+
+.fade-in{
+
+    animation:fadeIn .8s ease;
+
+}
+
+.slide-up{
+
+    animation:slideUp .8s ease;
+
+}
+
+.scale-in{
+
+    animation:scaleIn .5s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes slideUp{
+
+    from{
+
+        transform:translateY(40px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes scaleIn{
+
+    from{
+
+        transform:scale(.9);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ===========================================================
+   Loading Spinner
+   =========================================================== */
+
+.loader{
+
+    width:42px;
+
+    height:42px;
+
+    border:5px solid rgba(114, 136, 174, 0.25);
+
+    border-top-color:var(--indigo);
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+/* ===========================================================
+   Responsive
+   =========================================================== */
+
+@media(max-width:992px){
+
+    h1{
+
+        font-size:2.3rem;
+
+    }
+
+    h2{
+
+        font-size:1.7rem;
+
+    }
+
+    section{
+
+        padding:60px 0;
+
+    }
+
+}
+
+@media(max-width:640px){
+
+    h1{
+
+        font-size:1.9rem;
+
+    }
+
+    h2{
+
+        font-size:1.4rem;
+
+    }
+
+    .container{
+
+        width:95%;
+
+    }
+
+}
+
+.dashbutton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--primary-dark);
+    color: var(--white) !important;
+
+    padding: 14px 28px;
+    border-radius: 12px;
+    border: none;
+
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.dashbutton:hover {
+    background: var(--primary);
+    transform: scale(1.02);
+}
+
+.dashbutton:active {
+    transform: scale(0.98);
+}
